@@ -1,221 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melwide Homes</title>
-
-    <!-- Prevent search engines from indexing this page -->
-    <meta name="robots" content="noindex, nofollow">
-
-    <style>
-        /* Reset & base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-
-        body {
-            background-color: #121212;
-            color: #fff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background: #1b1b1b;
-        }
-
-        .logo {
-            height: 45px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        .nav-links a:hover {
-            color: #00a2ff;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(180deg, #1b1b1b 0%, #000 100%);
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-        }
-
-        .hero span {
-            color: #00a2ff;
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: 20px auto;
-            color: #ccc;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #00a2ff;
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-            font-weight: 600;
-            transition: background 0.3s, transform 0.3s;
-        }
-
-        .btn:hover {
-            background: #0084cc;
-            transform: scale(1.05);
-        }
-
-        /* About Section */
-        .about, .contact {
-            text-align: center;
-            padding: 70px 20px;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .about h2, .contact h2 {
-            font-size: 2rem;
-            color: #00a2ff;
-            margin-bottom: 20px;
-        }
-
-        .about p, .contact p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: #ccc;
-        }
-
-        /* Contact Links */
-        .contact p a {
-            color: #00a2ff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact p a:hover {
-            color: #0084cc;
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            background: #0f0f0f;
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                text-align: center;
-                padding: 15px 20px;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 10px;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .about, .contact {
-                padding: 50px 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 70px 15px;
-            }
-
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-            }
-
-            .logo {
-                height: 40px;
-            }
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Melwide Homes - Temporary Site</title>
+<style>
+  body {
+    background: #121212;
+    color: #eee;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+  }
+  img.logo {
+    max-width: 180px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 480px;
+    margin: 0 auto 30px auto;
+    color: #bbb;
+  }
+  a.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0078d7;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  a.btn:hover {
+    background-color: #005ea2;
+  }
+  .note {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #f1a100;
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    img.logo {
+      max-width: 140px;
+      margin-bottom: 30px;
+    }
+  }
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <img src="1.png" alt="Melwide Homes Logo" class="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to <span>Melwide Homes</span></h1>
-        <p>Building homes, not just houses. Discover elegant designs and quality craftsmanship for modern living.</p>
-        <a href="https://melwidehomes.com" target="_blank" class="btn">Visit Our Website</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Melwide Homes is dedicated to redefining modern living. We focus on creating sustainable, stylish, and comfortable spaces that truly feel like home.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Email us at <a href="mailto:info@melwidehomes.com">info@melwidehomes.com</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Melwide Homes. All rights reserved.</p>
-    </footer>
+  <img src="1.png" alt="Melwide Homes Logo" class="logo" />
+  <h1>Melwide Homes</h1>
+  <p>Our new website is coming soon. Thank you for your patience.</p>
+  <a href="http://melwidehomes.com" target="_blank" class="btn" rel="noopener noreferrer">Visit Our Website</a>
+  <p class="note">*Note: The official website is currently loading over an unsecured connection (HTTP). Please proceed with caution.</p>
 </body>
 </html>
